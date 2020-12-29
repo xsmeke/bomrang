@@ -279,7 +279,7 @@ maintaining attributes).</p>
     <pre class="examples"><div class='input'><span class='co'># \donttest{</span>
 <span class='fu'>get_historical_weather</span><span class='op'>(</span>stationid <span class='op'>=</span> <span class='st'>"023000"</span>,
                       type <span class='op'>=</span> <span class='st'>"max"</span><span class='op'>)</span> <span class='co'>## ~48,000+ daily records</span>
-</div><div class='output co'>#&gt; <span class='message'>Data saved as /var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T//RtmpH6gbk9/IDCJAC0010_023000_1800_Data.csv</span></div><div class='output co'>#&gt; <span style='color: #00BBBB;font-style: italic;'>  --- Australian Bureau of Meteorology (BOM) Data Resource ---
+</div><div class='output co'>#&gt; <span class='message'>Data saved as /var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T//RtmptmyBbL/IDCJAC0010_023000_1800_Data.csv</span></div><div class='output co'>#&gt; <span style='color: #00BBBB;font-style: italic;'>  --- Australian Bureau of Meteorology (BOM) Data Resource ---
 #&gt;   (Original Request Parameters)
 #&gt;   Station:		ADELAIDE (WEST TERRACE / NGAYIRDAPIRA) [023000] 
 #&gt;   Location:		lat: -34.9257, lon: 138.5832
@@ -293,11 +293,11 @@ maintaining attributes).</p>
 #&gt;     4:   IDCJAC0010          23000 1887     1   4              NA
 #&gt;     5:   IDCJAC0010          23000 1887     1   5              NA
 #&gt;    ---                                                           
-#&gt; 48934:   IDCJAC0010          23000 2020    12  22            21.6
-#&gt; 48935:   IDCJAC0010          23000 2020    12  23            22.2
 #&gt; 48936:   IDCJAC0010          23000 2020    12  24            26.7
 #&gt; 48937:   IDCJAC0010          23000 2020    12  25            29.6
 #&gt; 48938:   IDCJAC0010          23000 2020    12  26            35.5
+#&gt; 48939:   IDCJAC0010          23000 2020    12  27            26.0
+#&gt; 48940:   IDCJAC0010          23000 2020    12  28            20.9
 #&gt;        accum_days_max quality
 #&gt;     1:             NA        
 #&gt;     2:             NA        
@@ -305,14 +305,14 @@ maintaining attributes).</p>
 #&gt;     4:             NA        
 #&gt;     5:             NA        
 #&gt;    ---                       
-#&gt; 48934:              1       N
-#&gt; 48935:              1       N
 #&gt; 48936:              1       N
 #&gt; 48937:              1       N
-#&gt; 48938:              1       N</div><div class='input'><span class='fu'>get_historical_weather</span><span class='op'>(</span>latlon <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='op'>-</span><span class='fl'>35.2809</span>, <span class='fl'>149.1300</span><span class='op'>)</span>,
+#&gt; 48938:              1       N
+#&gt; 48939:              1       N
+#&gt; 48940:              1       N</div><div class='input'><span class='fu'>get_historical_weather</span><span class='op'>(</span>latlon <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='op'>-</span><span class='fl'>35.2809</span>, <span class='fl'>149.1300</span><span class='op'>)</span>,
                        type <span class='op'>=</span> <span class='st'>"min"</span><span class='op'>)</span> <span class='co'>## 3,500+ daily records</span>
 </div><div class='output co'>#&gt; <span class='message'></span>
-#&gt; <span class='message'>Closest station: 070351 (CANBERRA AIRPORT)</span></div><div class='output co'>#&gt; <span class='message'>Data saved as /var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T//RtmpH6gbk9/IDCJAC0011_070351_1800_Data.csv</span></div><div class='output co'>#&gt; </span><span style='color: #00BBBB;font-style: italic;'>  --- Australian Bureau of Meteorology (BOM) Data Resource ---
+#&gt; <span class='message'>Closest station: 070351 (CANBERRA AIRPORT)</span></div><div class='output co'>#&gt; <span class='message'>Data saved as /var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T//RtmptmyBbL/IDCJAC0011_070351_1800_Data.csv</span></div><div class='output co'>#&gt; </span><span style='color: #00BBBB;font-style: italic;'>  --- Australian Bureau of Meteorology (BOM) Data Resource ---
 #&gt;   (Original Request Parameters)
 #&gt;   Station:		CANBERRA AIRPORT [070351] 
 #&gt;   Location:		lat: -35.3088, lon: 149.2004
@@ -326,11 +326,11 @@ maintaining attributes).</p>
 #&gt;    4:   IDCJAC0011          70351 2008     1   4              NA             NA
 #&gt;    5:   IDCJAC0011          70351 2008     1   5              NA             NA
 #&gt;   ---                                                                          
-#&gt; 4741:   IDCJAC0011          70351 2020    12  23             7.4              1
-#&gt; 4742:   IDCJAC0011          70351 2020    12  24             9.3              1
 #&gt; 4743:   IDCJAC0011          70351 2020    12  25            13.6              1
 #&gt; 4744:   IDCJAC0011          70351 2020    12  26            12.3              1
 #&gt; 4745:   IDCJAC0011          70351 2020    12  27            10.1              1
+#&gt; 4746:   IDCJAC0011          70351 2020    12  28            15.0              1
+#&gt; 4747:   IDCJAC0011          70351 2020    12  29            13.1              1
 #&gt;       quality
 #&gt;    1:        
 #&gt;    2:        
@@ -338,15 +338,15 @@ maintaining attributes).</p>
 #&gt;    4:        
 #&gt;    5:        
 #&gt;   ---        
-#&gt; 4741:       N
-#&gt; 4742:       N
 #&gt; 4743:       N
 #&gt; 4744:       N
-#&gt; 4745:       N</div><div class='input'><span class='co'># }</span>
+#&gt; 4745:       N
+#&gt; 4746:       N
+#&gt; 4747:       N</div><div class='input'><span class='co'># }</span>
 <span class='co'># \donttest{</span>
 <span class='fu'>get_historical</span><span class='op'>(</span>stationid <span class='op'>=</span> <span class='st'>"023000"</span>,
               type <span class='op'>=</span> <span class='st'>"max"</span><span class='op'>)</span> <span class='co'>## ~48,000+ daily records</span>
-</div><div class='output co'>#&gt; <span class='message'>Data saved as /var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T//RtmpH6gbk9/IDCJAC0010_023000_1800_Data.csv</span></div><div class='output co'>#&gt; </span><span style='color: #00BBBB;font-style: italic;'>  --- Australian Bureau of Meteorology (BOM) Data Resource ---
+</div><div class='output co'>#&gt; <span class='message'>Data saved as /var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T//RtmptmyBbL/IDCJAC0010_023000_1800_Data.csv</span></div><div class='output co'>#&gt; </span><span style='color: #00BBBB;font-style: italic;'>  --- Australian Bureau of Meteorology (BOM) Data Resource ---
 #&gt;   (Original Request Parameters)
 #&gt;   Station:		ADELAIDE (WEST TERRACE / NGAYIRDAPIRA) [023000] 
 #&gt;   Location:		lat: -34.9257, lon: 138.5832
@@ -360,11 +360,11 @@ maintaining attributes).</p>
 #&gt;     4:   IDCJAC0010          23000 1887     1   4              NA
 #&gt;     5:   IDCJAC0010          23000 1887     1   5              NA
 #&gt;    ---                                                           
-#&gt; 48934:   IDCJAC0010          23000 2020    12  22            21.6
-#&gt; 48935:   IDCJAC0010          23000 2020    12  23            22.2
 #&gt; 48936:   IDCJAC0010          23000 2020    12  24            26.7
 #&gt; 48937:   IDCJAC0010          23000 2020    12  25            29.6
 #&gt; 48938:   IDCJAC0010          23000 2020    12  26            35.5
+#&gt; 48939:   IDCJAC0010          23000 2020    12  27            26.0
+#&gt; 48940:   IDCJAC0010          23000 2020    12  28            20.9
 #&gt;        accum_days_max quality
 #&gt;     1:             NA        
 #&gt;     2:             NA        
@@ -372,14 +372,14 @@ maintaining attributes).</p>
 #&gt;     4:             NA        
 #&gt;     5:             NA        
 #&gt;    ---                       
-#&gt; 48934:              1       N
-#&gt; 48935:              1       N
 #&gt; 48936:              1       N
 #&gt; 48937:              1       N
-#&gt; 48938:              1       N</div><div class='input'><span class='fu'>get_historical</span><span class='op'>(</span>latlon <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='op'>-</span><span class='fl'>35.2809</span>, <span class='fl'>149.1300</span><span class='op'>)</span>,
+#&gt; 48938:              1       N
+#&gt; 48939:              1       N
+#&gt; 48940:              1       N</div><div class='input'><span class='fu'>get_historical</span><span class='op'>(</span>latlon <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='op'>-</span><span class='fl'>35.2809</span>, <span class='fl'>149.1300</span><span class='op'>)</span>,
                type <span class='op'>=</span> <span class='st'>"min"</span><span class='op'>)</span> <span class='co'>## 3,500+ daily records</span>
 </div><div class='output co'>#&gt; <span class='message'></span>
-#&gt; <span class='message'>Closest station: 070351 (CANBERRA AIRPORT)</span></div><div class='output co'>#&gt; <span class='message'>Data saved as /var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T//RtmpH6gbk9/IDCJAC0011_070351_1800_Data.csv</span></div><div class='output co'>#&gt; </span><span style='color: #00BBBB;font-style: italic;'>  --- Australian Bureau of Meteorology (BOM) Data Resource ---
+#&gt; <span class='message'>Closest station: 070351 (CANBERRA AIRPORT)</span></div><div class='output co'>#&gt; <span class='message'>Data saved as /var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T//RtmptmyBbL/IDCJAC0011_070351_1800_Data.csv</span></div><div class='output co'>#&gt; </span><span style='color: #00BBBB;font-style: italic;'>  --- Australian Bureau of Meteorology (BOM) Data Resource ---
 #&gt;   (Original Request Parameters)
 #&gt;   Station:		CANBERRA AIRPORT [070351] 
 #&gt;   Location:		lat: -35.3088, lon: 149.2004
@@ -393,11 +393,11 @@ maintaining attributes).</p>
 #&gt;    4:   IDCJAC0011          70351 2008     1   4              NA             NA
 #&gt;    5:   IDCJAC0011          70351 2008     1   5              NA             NA
 #&gt;   ---                                                                          
-#&gt; 4741:   IDCJAC0011          70351 2020    12  23             7.4              1
-#&gt; 4742:   IDCJAC0011          70351 2020    12  24             9.3              1
 #&gt; 4743:   IDCJAC0011          70351 2020    12  25            13.6              1
 #&gt; 4744:   IDCJAC0011          70351 2020    12  26            12.3              1
 #&gt; 4745:   IDCJAC0011          70351 2020    12  27            10.1              1
+#&gt; 4746:   IDCJAC0011          70351 2020    12  28            15.0              1
+#&gt; 4747:   IDCJAC0011          70351 2020    12  29            13.1              1
 #&gt;       quality
 #&gt;    1:        
 #&gt;    2:        
@@ -405,11 +405,11 @@ maintaining attributes).</p>
 #&gt;    4:        
 #&gt;    5:        
 #&gt;   ---        
-#&gt; 4741:       N
-#&gt; 4742:       N
 #&gt; 4743:       N
 #&gt; 4744:       N
-#&gt; 4745:       N</div><div class='input'><span class='co'># }</span>
+#&gt; 4745:       N
+#&gt; 4746:       N
+#&gt; 4747:       N</div><div class='input'><span class='co'># }</span>
 </div></span></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
